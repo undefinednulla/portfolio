@@ -1,0 +1,141 @@
+.about {
+    &-exp {
+        &__title {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+            letter-spacing: 4px;
+        }
+
+        &__content {
+            letter-spacing: 2px;
+            text-align: justify;
+        }
+
+        &__sign {
+            font-family: 'Mr De Haviland', cursive;
+            font-size: 64px;
+            color: $primary-color;
+            text-align: center;
+        }
+    }
+
+    &-edu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &__name {
+            font-size: 24px;
+            margin-bottom: 50px;
+            font-weight: 700;
+            letter-spacing: 4px;
+        }
+
+        &__post {
+            margin-bottom: 30px;
+
+            &-time {
+                font-size: 10px;
+                font-weight: 600;
+                color: rgb(150, 150, 150);
+                text-transform: uppercase;
+            }
+
+            &-name {
+                display: flex;
+                justify-content: center;
+
+                p {
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    margin-bottom: 0;
+                    font-size: 18px;
+                }
+            }
+
+            &-class {
+                font-size: 12px;
+                font-style: italic;
+                letter-spacing: 1px;
+            }
+        }
+
+
+    }
+
+    &-work {
+
+
+        &__title {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+            letter-spacing: 4px;
+        }
+
+        &-posts {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .about-work__post {
+                text-align: center;
+                margin-bottom: 30px;
+
+                &-number {
+                    font-size: 32px;
+                    font-weight: 300;
+                }
+
+                &-span {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: rgb(241, 165, 2);
+                }
+            }
+        }
+    }
+}
+
+.about-wapper {
+    gap: 30px;
+}
+
+
+@include maxW(600px) {
+    .about {
+        &-exp__title {
+            font-size: 30px !important;
+            color: rgb(236, 215, 26);
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        &-edu__name {
+            font-size: 30px !important;
+            color: rgb(236, 215, 26);
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        &-work__title {
+            font-size: 30px !important;
+            color: rgb(236, 215, 26);
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+@include maxW(420px) {
+    .about-exp__sign {
+        font-size: 46px;
+    }
+}

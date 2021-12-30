@@ -1,0 +1,54 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+// input,
+// textarea,
+// select,
+// button {
+//     cursor: pointer;
+// }
+
+input {
+    height: 48px !important;
+    padding: 11px 24px 12px 24px !important; 
+}
+
+textarea {
+    padding: 11px 24px 12px 24px !important; 
+
+}
+
+label {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+li {
+    list-style: none;
+}

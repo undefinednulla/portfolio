@@ -1,0 +1,146 @@
+.projects {
+    min-height: 1300px;
+
+    &-btn {
+        padding-top: 100px;
+        padding-left: 100px;
+    }
+
+    &-post {
+        &__item-1 {
+            position: relative;
+
+            &-1 {
+                padding-right: 18%;
+
+                img {
+                    transform: scale(1);
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.1)
+                    }
+                }
+
+            }
+
+            &-2 {
+                position: absolute;
+                top: 50%;
+                padding-left: 13%;
+
+                img {
+                    transform: scale(1);
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.1)
+                    }
+                }
+
+            }
+        }
+
+        &__item-2 {
+            padding-left: 50px;
+
+            img {
+                transform: scale(1);
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1)
+                }
+            }
+
+
+            .fashion-span-right {
+                padding-left: 80px;
+                padding-bottom: 20px;
+
+            }
+        }
+    }
+}
+
+@include maxW(770px) {
+    .projects-btn {
+        padding-top: 40px;
+        padding-left: 0px;
+        a {
+            display: block;
+            width: 140px;
+            margin: 0 auto;
+        }
+    }
+
+    .projects-post__item-2 .fashion-span-right {
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 20px;
+    }
+
+    .projects-post__item-1-1 {
+        padding-right: 18%;
+        padding-left: 5%;
+    }
+
+    .projects-post__item-1-2 {
+        position: relative;
+        top: 0;
+        padding: 60px 13%;
+
+    }
+}
+
+@include maxW(600px) {
+    .projects-post__item-1-2 {
+        position: relative;
+        top: 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .projects-post__item-1 {
+        padding-left: 50px;
+    }
+}
+
+@include maxW(420px) {
+    .projects-btn {
+        padding-top: 40px;
+        padding-left: 35px;
+        margin-bottom: 30px;
+    }
+
+    .fashion-span-right {
+        padding-left: 20px !important;
+        padding-bottom: 20px;
+    }
+
+    .projects-post__item-2 {
+        padding-left: 15px;
+    }
+
+    .projects-post__item-1 {
+        padding-left: 15px;
+        &-1 {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        &-2 {
+            padding-top: 20px;
+            padding-left: 0px;
+            padding-right: 0px;
+
+            .post-span {
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .post-span {
+        font-size: 14px;
+    }
+}

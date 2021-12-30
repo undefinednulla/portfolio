@@ -1,0 +1,59 @@
+.contacts {
+    &-form {
+
+        input,
+        textarea {
+            font-family: $secondary-font;
+            background-color: #f6f6f6;
+            border: none;
+            font-size: 14px;
+            line-height: 24px;
+            color: #333333;
+            margin-bottom: 24px;
+            border-radius: 0px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            // cursor: text;
+
+            &:focus {
+                border: 0px;
+                background-color: #f6f6f6;
+                box-shadow: none;
+            }
+        }
+
+        &__check {
+            input {
+                height: 12px !important;
+                // margin: 6px 2px;
+                margin-top: 4px;
+
+            }
+
+            label {
+                color: #333333;
+                letter-spacing: 2px;
+                font-family: $secondary-font;
+                font-weight: 500;
+            }
+        }
+        
+        &__submit {
+            font-family: $secondary-font;
+            letter-spacing: 2px;
+            width: 100%;
+            color: $primary-color;
+            font-weight: 700;
+            font-size: 14px;
+            height: 50px;
+            background-color: rgba(228, 205, 3, 0.863);
+            border-radius: 0px;
+            box-shadow: none;
+            border: 0px;
+            &:hover {
+                color: $primary-color;
+                background-color: rgb(241, 220, 26);
+            }
+        }
+    }
+}

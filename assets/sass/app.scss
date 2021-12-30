@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixin";
+@import "reset";
+@import "base";
+@import "background";
+@import "navbar";
+@import "contents";
+@import "home";
+@import "about";
+@import "project";
+@import "photos";
+@import "skills";
+@import "services";
+@import "contact";
+@import "cursor";
+@import "loading";
+@import "footer";
+//sass --watch app.scss:../css/app.css
